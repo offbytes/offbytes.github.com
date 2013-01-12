@@ -11,11 +11,11 @@ tags: [emacs]
 At first I wanted to write that it is my first post since long time (especially in english), so please correct me :).
 
 
-### Little prolog
+### Little prologue
 
 I'm Java programmer. I became interested in Clojure few years ago (my first repo with Clojure code is 4 years old), but it was always a hobby. Nothing special came out of it. I was returning to it from time to time. 
 
-I always built my new environment, with new version of Emacs and Clojure, with new init scripts. I was using Emacs for C development for some time on studies but also it was just using it, probably just a percent of its posibilities. At the beginning I used swank-clojure set up from [clojure.org](http://clojure.org/). So it was one .emacs file with everything inside. I've done everything gropingly. 
+I always built my new environment, with new version of Emacs and Clojure, with new init scripts. I was using Emacs for C development for some time on studies but also it was just using it, probably just a percent of its possibilities. At the beginning I used swank-clojure set up from [clojure.org](http://clojure.org/). So it was one .emacs file with everything inside. I've done everything blindly. 
 
 ### package.el
 
@@ -51,4 +51,4 @@ That's all. I put all my configuration files into ~/.emacs.d/init.d/ directory. 
 
 I'm going to put here code for selecting packages to be installed with package.el at first execution of Emacs, but we'll see.
 
-That's all. My whole configuration will be soon available at github.
+My whole configuration is available at [github](https://github.com/mrroman/emacs-config).
