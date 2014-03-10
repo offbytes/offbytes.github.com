@@ -1,0 +1,32 @@
+---
+layout: default
+title: projects
+---
+
+<h1>Projects</h1>
+<h4>offbytes projects:</h4>
+<dl id="repos_offbytes" class="dl-horizontal">
+</dl>
+<h4>mrroman projects:</h4>
+<dl id="repos_mrroman" class="dl-horizontal">
+</dl>
+
+<script type="text/javascript" charset="utf-8">
+var projects = (function() {
+  function load_repos(where) {
+    return function(response) {
+      var posts = $(where);
+      response.data.forEach(function(repo) {
+        posts.append('<dt>'+ moment.utc(repo.updated_at).format('DD MMM YYYY') + '</dt> <dd><a href="'+ repo.html_url +'">'+repo.name+'</a> - <span>' + repo.description + '</span></dd>');
+      });
+    };
+  }
+
+  return {
+    offbytes: load_repos('#repos_offbytes'),
+    mrroman: load_repos('#repos_mrroman')
+  }
+})();
+</script>
+<script src="https://api.github.com/users/offbytes/repos?sort=updates&direction=desc&callback=projects.offbytes" type="text/javascript" charset="utf-8"></script>
+<script src="https://api.github.com/users/mrroman/repos?sort=updates&direction=desc&callback=projects.mrroman" type="text/javascript" charset="utf-8"></script>
