@@ -1,12 +1,7 @@
 ---
 layout: post
 title: "Emacs config again"
-description: "I wanted to do it right. I didn't want to use boilerplates or fast solutions. Lets see what came of it."
-tagline: "always works"
-category: 
-tags: [emacs]
 ---
-{% include JB/setup %}
 
 At first I wanted to write that it is my first post since long time (especially in english), so please correct me :).
 
