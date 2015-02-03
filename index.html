@@ -1,11 +1,12 @@
 ---
 layout: default
-title: home
-section: home
+title: blog
+section: blog
 ---
 
-<div class="jumbotron">
-  <h1>Welcome to offbytes!</h1>
-  <p><a class="btn btn-primary btn-lg" role="button" href="/blog.html">Read more</a></p>
-</div>
-
+<h1>Blog Posts</h1>
+<dl class="dl-horizontal">
+  {% for post in site.posts %}
+  <dt>{{ post.date | date_to_string }}</dt><dd><a href="{{ post.url }}">{{ post.title }}</a></dd>
+  {% endfor %}
+</dl>
